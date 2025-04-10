@@ -1,4 +1,4 @@
-NAME		=	OPEN
+NAME		=	open
 CC			=	c++
 CFLAGS		=	-Wall -Wextra -Werror -std=c++98
 INCL_DIR	=	includes
