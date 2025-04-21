@@ -6,7 +6,7 @@
 /*   By: bszikora <bszikora@student.42helbronn.d    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/03 17:31:45 by bszikora          #+#    #+#             */
-/*   Updated: 2025/04/20 13:46:04 by bszikora         ###   ########.fr       */
+/*   Updated: 2025/04/21 13:02:15 by bszikora         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,6 +45,7 @@ ScavTrap& ScavTrap::operator=(const ScavTrap& other)
         this->hitp = other.hitp;
         this->energyp = other.energyp;
         this->attackp = other.attackp;
+		this->gatekeep = other.gatekeep;
     }
     std::cout << "ScavTrap " << this->name << " has been assigned.\n";
     return *this;
@@ -67,4 +68,13 @@ void ScavTrap::attack(const std::string& target)
         std::cout << "ScavTrap " << this->name << " cannot attack due to insufficient energy or health.\n";
 }
 
-void ScavTrap::guardGate() { std::cout << this->name << "is now in gatekeeper mode\n";}
+void ScavTrap::guardGate()
+{
+	if (this->gatekeep == true)
+		std::cout << this->name << " is already in gatekeeper mode\n";
+	else
+	{
+		std::cout << this->name << " is now in gatekeeper mode\n";
+		this->gatekeep = true;
+	}
+}

@@ -6,7 +6,7 @@
 /*   By: bszikora <bszikora@student.42helbronn.d    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/03 16:33:18 by bszikora          #+#    #+#             */
-/*   Updated: 2025/04/20 13:47:12 by bszikora         ###   ########.fr       */
+/*   Updated: 2025/04/21 13:00:43 by bszikora         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,9 @@ int main()
     scav1.attack("ScavTwo");
     scav2.takeDamage(20);
 	
+	scav1.guardGate();
+	scav2.guardGate();
+
 	scav1.guardGate();
 	scav2.guardGate();
 	
