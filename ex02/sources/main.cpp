@@ -6,40 +6,36 @@
 /*   By: bszikora <bszikora@student.42helbronn.d    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/03 16:33:18 by bszikora          #+#    #+#             */
-/*   Updated: 2025/04/21 13:00:43 by bszikora         ###   ########.fr       */
+/*   Updated: 2025/04/21 13:26:54 by bszikora         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ScavTrap.hpp"
+#include "FragTrap.hpp"
 
 int main()
 {
-    ScavTrap scav1("ScavOne");
-    ScavTrap scav2("ScavTwo");
-
-    scav1.attack("ScavTwo");
-    scav2.takeDamage(20);
+	FragTrap Fraggie("Fraggie");
+	FragTrap Trappie("Trappie");
 	
-	scav1.guardGate();
-	scav2.guardGate();
+	Fraggie.highFivesGuys();
+	Trappie.highFivesGuys();
 
-	scav1.guardGate();
-	scav2.guardGate();
+    Fraggie.attack("ScavTwo");
+    Trappie.takeDamage(20);
 	
-    scav2.attack("ScavOne");
-    scav1.takeDamage(15);
+    Trappie.attack("ScavOne");
+    Fraggie.takeDamage(15);
 
-    scav1.beRepaired(10);
-    scav2.beRepaired(5);
+    Fraggie.beRepaired(10);
+    Trappie.beRepaired(5);
 
-    scav1.attack("ScavTwo");
-    scav2.takeDamage(30);
+    Fraggie.attack("ScavTwo");
+    Trappie.takeDamage(30);
 
-    scav2.attack("ScavOne");
-    scav1.takeDamage(50);
+    Trappie.attack("ScavOne");
+    Fraggie.takeDamage(50);
 
-    scav1.beRepaired(20);
-    scav2.beRepaired(10);
-
+    Fraggie.beRepaired(20);
+    Trappie.beRepaired(10);
     return 0;
 }
