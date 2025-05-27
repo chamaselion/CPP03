@@ -3,24 +3,24 @@
 /*                                                        :::      ::::::::   */
 /*   ClapTrap.cpp                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: bszikora <bszikora@student.42helbronn.d    +#+  +:+       +#+        */
+/*   By: bszikora <bszikora@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/03 16:33:20 by bszikora          #+#    #+#             */
-/*   Updated: 2025/04/10 11:31:57 by bszikora         ###   ########.fr       */
+/*   Updated: 2025/05/27 14:23:33 by bszikora         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ClapTrap.hpp"
 
-ClapTrap::ClapTrap() : name("nameme"), hitp(10), energyp(10), attackp(10) {std::cout << "Default constructor called\n";}
-ClapTrap::ClapTrap(const std::string& name): name(name), hitp(10), energyp(10), attackp(10){std::cout << "Named constructor  called\n";}
+ClapTrap::ClapTrap() : name("nameme"), hitp(10), energyp(10), attackp(10) {std::cout << "Default constructor for ClapTrap called\n";}
+ClapTrap::ClapTrap(const std::string& name): name(name), hitp(10), energyp(10), attackp(10){std::cout << "Named constructor for ClapTrap called\n";}
 ClapTrap::ClapTrap(const ClapTrap& other)
 {
 		this->name = other.name;
 		this->hitp = other.hitp;
 		this->energyp = other.energyp;
 		this->attackp = other.attackp;
-	std::cout << "Copy constructor  called\n";
+	std::cout << "Copy constructor for ClapTrap called\n";
 }
 ClapTrap& ClapTrap::operator=(const ClapTrap& other)
 {
@@ -28,9 +28,9 @@ ClapTrap& ClapTrap::operator=(const ClapTrap& other)
 	this->hitp = other.hitp;
 	this->energyp = other.energyp;
 	this->attackp = other.attackp;
-	return (std::cout << "Copy assignment constructor called\n", *this);
+	return (std::cout << "Copy assignment constructor for ClapTrap called\n", *this);
 }
-ClapTrap::~ClapTrap() {std::cout << "Deconstructor called\n";}
+ClapTrap::~ClapTrap() {std::cout << "Deconstructor for ClapTrap called\n";}
 
 
 void ClapTrap::attack(const std::string& target)

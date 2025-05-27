@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   FragTrap.hpp                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: bszikora <bszikora@student.42helbronn.d    +#+  +:+       +#+        */
+/*   By: bszikora <bszikora@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/21 13:06:25 by bszikora          #+#    #+#             */
-/*   Updated: 2025/04/21 13:23:39 by bszikora         ###   ########.fr       */
+/*   Updated: 2025/05/27 14:19:18 by bszikora         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,9 +18,6 @@
 
 class FragTrap : public ClapTrap
 {
-private:
-	int m_int;
-
 public:
 	FragTrap();
 	FragTrap(const std::string &name);
