@@ -3,17 +3,17 @@
 /*                                                        :::      ::::::::   */
 /*   ClapTrap.cpp                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: bszikora <bszikora@student.42heilbronn.    +#+  +:+       +#+        */
+/*   By: bszikora <bszikora@student.42helbronn.d    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/03 16:33:20 by bszikora          #+#    #+#             */
-/*   Updated: 2025/05/27 14:22:43 by bszikora         ###   ########.fr       */
+/*   Updated: 2025/06/18 16:18:48 by bszikora         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ClapTrap.hpp"
 
-ClapTrap::ClapTrap() : name("name_me"), hitp(10), energyp(10), attackp(10) {std::cout << "Default constructor for ClapTrap called\n";}
-ClapTrap::ClapTrap(const std::string& name): name(name), hitp(10), energyp(10), attackp(10){std::cout << "Named constructor for ClapTrap called\n";}
+ClapTrap::ClapTrap() : name("name_me"), hitp(10), energyp(10), attackp(0) {std::cout << "Default constructor for ClapTrap called\n";}
+ClapTrap::ClapTrap(const std::string& name): name(name), hitp(10), energyp(10), attackp(0){std::cout << "Named constructor for ClapTrap called\n";}
 ClapTrap::ClapTrap(const ClapTrap& other)
 {
 		this->name = other.name;

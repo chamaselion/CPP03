@@ -6,7 +6,7 @@
 /*   By: bszikora <bszikora@student.42helbronn.d    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/21 13:06:42 by bszikora          #+#    #+#             */
-/*   Updated: 2025/04/21 13:27:21 by bszikora         ###   ########.fr       */
+/*   Updated: 2025/06/18 16:25:14 by bszikora         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ FragTrap::FragTrap(): ClapTrap()
 {
     this->hitp = 100;
     this->energyp = 100;
-    this->attackp = 300;
+    this->attackp = 30;
     std::cout << "FragTrap " << this->name << " has been created.\n";
 }
 
